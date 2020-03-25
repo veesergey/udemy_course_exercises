@@ -28,9 +28,6 @@ function Parent(firstName, lastName, favoriteColor, favoriteFood){
     this.favoriteFood = favoriteFood;
 }
 
-function Child(firstName, lastName, favoriteColor, favoriteFood){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.favoriteColor = favoriteColor;
-    this.favoriteFood = favoriteFood;
+function Child(){
+    Parent.apply(this, arguments);
 }
